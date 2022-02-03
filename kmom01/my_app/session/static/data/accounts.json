@@ -1,0 +1,24 @@
+[
+   {
+
+    "name": "Pension",
+    "balance": "1000",
+    "owner": "Per"
+
+   },
+   {
+
+    "name": "Pension",
+    "balance": "2000",
+    "owner": "Anders"
+
+   },
+   {
+
+    "name": "Pension",
+    "balance": "10000",
+    "owner": "Erik"
+
+   }
+
+]

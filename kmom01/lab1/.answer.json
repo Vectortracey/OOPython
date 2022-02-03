@@ -1,0 +1,36 @@
+{
+    "details": "Generated for miek19 at 2021-02-03 09:25:55.",
+    "key": "d7a6290f799735dab704cb49e1dcb6fa",
+    "summary": {
+        "questions": 11,
+        "points": 13,
+        "pass": 10,
+        "passdistinct": 13
+    },
+    "points": {
+        "1.1": 1,
+        "1.2": 1,
+        "1.3": 1,
+        "1.4": 1,
+        "1.5": 1,
+        "1.6": 1,
+        "1.7": 1,
+        "1.8": 1,
+        "2.1": 1,
+        "2.2": 1,
+        "3.1": 3
+    },
+    "answers": {
+        "1.1": "My cats name is Lilly and has green eyes.",
+        "1.2": 7,
+        "1.3": "My cats name is Lilly, has green eyes and 7 lives left to live.",
+        "1.4": "Lilly has 4 paws.",
+        "1.5": "Lilly has 2 paws but cats have 4 paws.",
+        "1.6": "My cats name is Lilly, has green eyes and 7 lives left to live. My cats name is Misty, has green eyes and -1 lives left to live.",
+        "1.7": "31-06-15",
+        "1.8": 111975,
+        "2.1": 200243,
+        "2.2": "31-52-41",
+        "3.1": true
+    }
+}

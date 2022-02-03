@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Pension",
+        "balance": "1000",
+        "owner": "Per",
+        "type": "Account"
+    },
+    {
+        "name": "Pension",
+        "balance": "2000",
+        "owner": "Anders",
+        "type": "Account"
+    },
+    {
+        "name": "Extra_konto",
+        "balance": "30000",
+        "owner": "Erik",
+        "type": "Account"
+    },
+    {
+        "name": "Test3",
+        "balance": "10000",
+        "owner": "Sverker",
+        "type": "Account"
+    },
+    {
+        "name": "Konto3",
+        "balance": "15000",
+        "owner": "Mikael",
+        "type": "Account"
+    }
+]
+        {
+            "type": "SavingsAccount",
+            "balance": 10495.0
+        }
+
+                {% for account in accounts %}
+                    <tr>
+                        <td>
+                            <a href="{{ url_for('account', account_id=account.id_)}}">
+                                {{ account.id_ }}
+                            </a>
+                        </td>
+                        <td>{{ account.balance | round(2) }}</td>
+                        <td>{{ account.type_ }}</td>
+                    </tr>
+                {% endfor %}

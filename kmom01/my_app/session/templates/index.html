@@ -1,0 +1,26 @@
+{% include "header.html"%}
+
+<div class="container" role="main">
+    <div class="page-header">
+        <h1>Min hemsida för OOPYTHON kursen.</h1>
+
+
+        <p>Hallå och välkommen till min hemsida som jag kommer att använda mig utav under kursen OOPYTHON hos Blekinge Tekniska Högskola.</p>
+        <p>Mitt namn är {{i.firstname}} {{i.lastname}}, nybliven {{ person.calculate_age () }} åring och jag läser webbprogrameringsprogrammet 120HP</p>
+        {{ person1.phrase() }}
+
+
+        <p><img class="profile" src="{{i.img}}" alt="en bild 2"></p>
+
+
+
+
+
+
+
+    </div>
+
+
+</div>
+
+{% include "footer.html"%}

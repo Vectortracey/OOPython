@@ -1,0 +1,152 @@
+{% include "header.html"%}
+
+<div class="container" role="main">
+    <div class="page-header">
+        <h1>Redovisnings sida</h1>
+       <h2>kmom01</h2>
+       <p>*Var det några problem med att venv och installera Flask?</p>
+       <p>Det var inga större problem att installera venv, vart något strul med pip men en ominstallation så gick allt vägen smidigt.</p>
+
+       <P>*Är du bekant med objekt och klasser sedan tidigare?</P>
+       <p>Orden har väl dykt upp när man läst material eller kollat på youtube, har inte skrivit någon kod där jag använt mig utav det tidigare, kanske lite likt delar från Javascript kursen men inte mer än så.</p>
+
+       <p>*Vad är en klass/objekt?</p>
+       <p>En klass skulle jag beskriva som en mall, tex en mall för hur man konstruerar en bil, klassen i sig gör inget utan man använder den för att skapa objekt, tex kanske jag har en bil klass med attribute som märke, modell, färg, och med min bil klass så kan jag skapa en ny bil säg "bil1" tex bil1=bil("bmw", "e46", "silvergrå")</p>
+
+       <p>*Vad är skillnaden på instans- och statiska attribut/metoder?</p>
+       <p>*instanser använder sig utav parametern "self", tex om jag skapar min bil så kommer de 3 attributen använda sig utav self.</p>
+       <p>self.car = car, self.model = model, self.color = color</p>
+       <p>Dessa kallar man på när jag vill skapa min säg bil.</p>
+
+       <p>Om man istället vill ha en metod (funktion i en klass) som inte använder sig av instansattributen (self) då gör man dem statiska istället @staticmethod.</p>
+
+       <p>*Vilka programmeringsparadigmer känner du till?</p>
+       <p>javascipt från tidigare kurs använder sig bland annat av funktionell, och object-orienterad</p>
+
+       <p>*Har du någon erfarenhet av Bootstrap sedan tidigare?</p>
+       <p>Ingen erfarenhet, har hört polarna som programerar använder sig mycket utav det men jag har inte läst på något mer än det jag blivit exponerad av från OOPYTHON kursen.</p>
+
+       <p>*Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort?</p>
+       <p>Det gick bra att komma igång tycker jag, som vanligt är det en del i början att installera och så men följer man instruktionerna så brukar allt gå bra, annars har man discord som man kan vända sig till.</p>
+
+
+
+       <h2>kmom02</h2>
+       <p>*Kan du ge exempel på något användningsområde där objektorientering och arv hade passat bra?</p>
+       <p>Efter ha gjort bankuppgiften så ser jag att man kan applicera objektorientering på väldigt många områden, förutom uppgiften bank så kan man applicera objektorientering och arv i tex diverse företagssidor där man tex vill visa en katalog av produkter, och där produkterna kan ärva för klasser av vilken typ de tillhör, tex hammare äver från klassen verktyg etc.</p>
+       <p>*Förstod du de olika relationerna och skillnaden på dem?</p>
+       <p>Relationer och arv känns rimligt om man tänker som de tagit upp på föreläsningarna, en bil modell äver från klassen bil och kan då ärva de grundläggande funktionerna och "delarna" tex båda har 4a hjul och en motor med super(), men sedan kan man lägga till vad som skiljer dessa instancer av bilar åt, tex hästkrafter eller modell (sport, kombi, sedan etc).</p>
+       <p>*Vad innebär polymorfism inom objektorienterad programmering?</p>
+        <p>polymorfism inmom objektorientering innebär att man kan ha flera olika subklasser som står under en superklass(parent) och dessa kan hanteras som de vore instancer av den superklassen(parent).
+            Tex så kan olika djur ärva från föräldraklassen "Djur" de metoder som är gemensamma för båda djuren, tex djurens läte, hastighet, vikt.
+        </p>
+       <p>*Vad innebär inkapsling och publika interface inom objektorienterad programmering?</p>
+       <p>Python har inga direkta metoder för att göra data publik och skydda den, utan inom python så har man en vedertagen metod för att implementera om datan skall vara publik, skyddad eller manglad, detta gör man genom att sätta understreck framför datan, tex Data(publik), _Data(skyddad), Data(manglad).
+           med "skyddad" _Data visar man att det här är data som inte skall användas eller redigeras utanför klasssen om man inte vet vad den gör eller förstår följdeffekterna av att göra detta.
+       </p>
+       <P>*Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort?</P>
+       <p>Det gick bra att komma igång, men uppgift var lite mastig för att få ihop allt, det gäller att ha koll på vad de är man vill göra och hur man inhämtar och lägger undan datan som man vill jobba med.</p>
+       <p>*Vad tycker du om den typen av uppgift (bank)?</p>
+       <p>Jag tycker i efterhand att uppgiften var rolig, framförallt att man via webbformulär kan manipulera "hård" data på en lokal fil, i det här fallet vår json fil med information om våra konton.</p>
+
+       <h2>kmom03</h2>
+       <p>*Är du bekant med UML sedan tidigare? </p>
+       <p>Man har väl sett en del UML liknande exempel genom åren, tex på jobbet där vi fått en överblickade struktur på befälsordningen etc, har även sett denna typ i en av python böckerna jag har när man jobbade med klasser.</p>
+
+       <p>*Är du bekant med unittester sedan tidigare?</p>
+       <p>Jag har inte jobbat med unitester sen tidigare, jag har läst igenom det kapitlet i python boken och kanske snappat upp det på någon video men inte jobbat med det själv.</p>
+
+       <p>*Kan du se nyttan med UML och tester inom ramen för ett projekt?</p>
+       <p>Verkligen! med UML så kan man både visa för personer som inte är direkt insatta i programmering hur strukturen på tex en app kommer att vara, och de kan själva vara med till den strukturen då UML är lätt attt ta in och jobba med.Tester är lika så väldigt viktiga för ett projekt att kunna testa sin kod från alla möjliga olika håll och se att den håller ihop innan man skeppar ut den till användaren, även om det nu bara skulle vara en beta version så ger det ett betydligt mer seriöst intryck med en app som inte kraschar pågrunda av brister i koden.</p>
+
+       <p>*Vad tycker du om objektorienterad programmering än så länge?</p>
+       <p>Jag tycker objektorienterad programming är intressant och jag gillar strukturen och ser fördelar med att jobba objektorienterat då man får en tydlig struktur på sin kod och att man jobbar mer DRY med objektorienterad kod.</p>
+
+
+
+       <P>*Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort?</P>
+       <p>Det var en hel del att få till, men grunden hade vi från kmom02 (som jag tycker var ett betydligt större kmom att ta in) så jag tyckte det gick rätt bra ändå att få till det hela, och vart det oklarheter så fanns det hjälp i discord.</p>
+
+
+       <p>*Gjorde du extrauppgiften? </p>
+       <p>Jag gjorde inte extrauppgiften.</p>
+
+       <h2>kmom04</h2>
+       <p>*Har du skapat egna datastrukturer förut? </p>
+       <p>Jag har inte skapat datastrukturer förut så detta var något nytt, helt klart spännande!</p>
+
+       <p>*Vilken typ av lista valde du att göra och varför (enkel- dubbellänkad, cirkulär)?</p>
+       <p>Jag valde att göra en enkel linked lista, iom att det inte var några särskilda mål för denna datastruktur eller vad den är tänkt att användas till, däremot om man hade ett tydligt mål med strukturen så kanske man hade omvärderat och använt en annan typ.
+       </p>
+
+       <p>*Vilka exceptions skapade du? Hur gör man för att de ska kastas i listan?</p>
+       <p>Jag valde att göra en exeption på när man inte kan hitta index eller om inte index finns samt så gjorde jag ett exception för datan när inte den heller hittas eller finns.
+        Jag använder de som så att de ligger yttrest på de olika metoder som körs för att se om listan innehåller data eller om den är tom, och om den är tom så körs exception, de körs även inne i listan för att säga till om ett index värde blir större än själva listans innehåll eller om datan inte matchar.
+       </p>
+
+       <p>*Gjorde du någon extrauppgiften?</p>
+       <p>Jag gjorde inte någon extrauppgift.</p>
+
+
+
+       <P>*Vad är en länkad lista kontra en array?</P>
+       <p>När man skapar en array med säg 5 indexplatser så låser man upp dessa i minnet när den skapas, medans med en länkad lista kan man lägga till data allt eftersom iom att den inte är låser upp minnet efter antalet platser i listan utan varje nod refererar bara till nästa, exklusive head och tail/none.
+        Fördelen med array är att man vet hur stor listan blir och inte låser upp allt för mycket av minnet så kan man använda array istället för länkad lista.
+       </p>
+
+
+       <p>*Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort?</p>
+       <p>Det gick bra att komma igång, inte för mycket att läsa men föreläsningen / genomgngen på nästan 3h var lite tung, förstår dock att man ville ha med allt i ett istället för dela upp det, utöver det så var det länkade materialet och videos väldigt bra, även om det finns nyare videos som jag kan tycka förklarade lite bättre.</p>
+
+       <h2>kmom05</h2>
+
+       <p>*Vad är rekursion? </p>
+       <p>- rekursion är en funktion som kallar på sig själva i funktionen. Och iom att det blir som en while-loop så måste man jobba mot ett basfall och när det blir uppfyllt så avslutas funktionen.</p>
+       <p>*Känner du att du har förståelse för hur sorteringsalgoritmerna fungerar? </p>
+       <p>- Jag känner att jag har en betydligt större förståelse nu efter kursmomentet än innan och respekt för databasteorierna som ligger som grund, något som man som "kod-apa" lätt missar när man sitter i frontend och snyggar till en div. Jag har fått förståelse för att som man ska jobba mot användare så behöver man ha förståelse i hur de olika sorteringsalgoritmerna fungerar, vilka som är snabba och vilka som är långsamma, hur många cykler varje kräver, och vilken man bäst behöver använda sig utav så inte användare sitter där och väntar mer än nödvändigt, det känns som det kräver mer teori och test för att få ett djup om det hela, men känns som efter kursmomentet har jag en betydligt större bas att stå på.</p>
+       <p>*Vad tycker du om VisuAlgo?</p>
+       <p>- Jag tycker hemsidan var väldigt bra för att snabbt kunna visualisera sig i hur de olika sorteringsalgoritmerna fungerar, ett väldigt användbart verktyg och något jag skulle titta på för att repetera.</p>
+       <p>*Vad är big-O?</p>
+       <p>- Big O är hur snabbt exekveringstiden växer när N blir större, tex så mäter man effektiviteten och komplexiteten hos en algorirm där man ser algoritmens best case och worst case scenario och kan då beräkan tidne det skulle ta att exekvera den.</p>
+       <P>*Gjorde du någon av extrauppgift?</P>
+       <p>-Tyvärr inte.</p>
+       <p>*Gick det bra att komma i gång med kursmomentet, var det lagom, för litet, för stort?</p>
+       <p>-Jag tycker det var ett bra kursmoment om än väldigt mycket teori att ta in och krävdes en hel del visualiering med visuAlgo för att förstå hur algoritmerna jobbar, men överlag ett jämnt fördelat kursmoment</p>
+
+       <h2>Kmom06</h2>
+
+       <p>*Vad är ett Binärt sökträd?</p>
+       <p>-Ett binärt sökträd är ett träd som är uppbygt av noder där varje nod har max 2 barn(finns även så kallade ickebinära som har fler) och ett sökträd kan vara specialiserat tex med Heap där föräldern antingen alltid är större än barnen, då kallad Max Heap, eller där förälderna alltid är mindre, Min Heap.
+        Noderna kan även ha förbestämda egenskaper som måste uppfyllas, tex att akka noder till höger om föräldrer noden alltid där större och den till vänster är lägre.
+       </p>
+       <p>*Hur gick det att skriva de rekursiva funktionerna?</p>
+       <p>-Det gick väl, men det är ju ett annat sätt att tänka då man gärna vill köra allt i en while loop istället för skapa en rekursiv funktion som kör sig själv om och om igen mot ett basfall.</p>
+       <p>*Vad är Inorder, Preorder och Postorder när man pratar om traversera träd? </p>
+       <p>-Skillnaden mellan preorder och postorder är att i postorder så gås alla nodens barn igenom innan själva noden gås igenom, motsattsen är preorder. I inorder så läses alltid det vänstra barnet igenom först, sedan föräldernoden och sedan högre barnet.</p>
+       <p>*Vad är en Hash table?</p>
+       <p>-Hash table är en datastruktur som skapas med listor där man sätter in nycklarna i slots. När man skapar en hashtable är det första att tänka på hur stor själva listan bör vara, en bra regel att gå efter är att gdc(c + m ) = 1, great common divider, där m är längden på listan som primtal, och där c är ett positivt tal lägre än m. ponera att vi skapar ett hashtable där längden på listan är 7 och vi till sätta in 4 så använder vi oss utav modolus för att beräkna vart nyckeln 4 ska vara i listan, 4 % 7 = 4, ponera nu att vi vill sätta in 11, 11 % 7 är också 4, då får vi en collision, och då kan man antingen använda sig av open adressing som kollar efter lediga index platser till höger om positionen, eller chaining där nu cellen istället pekar mot en cell med samma hash värde.
+       </p>
+       <p>*Kan du jämföra och resonera kring de olika datastrukturerna vi gått igenom i kursen? Vilken passar till vad?</p>
+       <p>-De olika datastrukturerna som vi jobbat med är Linked list, queue, och stack. Queue är en lista där båda ändarna är öppna och där följer regeln "first in first out" ponera att vi har ett system med ordrar där vi vill servera den som la ordern först ska bli behandlad först. I stack är det som queue men här är bara ena änden öppen och regeln "last in first out", och om man nu är i behov av ett sådant system. I en linked list så har vi noder, där har vi ett head som är start noden som pekar mot nästa nod, och varje nod efter har 2 värden, ett med datan den håller och vilken nästa nod är som den pekar på, sista noden är tail, linked list är betydligt mer dynamiskt än de övriga 2 att jobba med.</p>
+       <p>*Gick det bra att utföra kursmomentet?</p>
+       <p>-Det gick bra att jobba igenom kursmomentet, åter här var det en hel del teori, just om hash table med chaining och open adressing, binära träd och allt där till, finns betydligt mer tid att fördjupa sig inom detta kursmoment än vad tiden som är satt på kursmomnetet tillåter.</p>
+
+       <h2>Kmom07- 10</h2>
+
+       <p>*För varje krav du implementerat, dvs 1-6, skriver du ett textstycke om ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. Missar du att skriva/dokumentera din lösning så blir det 0 poäng. Du kan inte komplettera en inlämning för att få högre betyg.</p>
+
+       <p>-Krav1 är hela grunden för projektet, vilket jag kan tycka var en väldigt stor med tanke på alla de krav som man kunde implementera. Jag valde att använda mig av dictioanries till mitt projekt, är väl det som känns mest bra och vant ifrån tidigare kurser sen att man kan implmentera de övriga kraven lättare med dict, något som jag inte kände att jag hade tid med dock, tyvärr. Jag tycker att krav 1 gick bra att genomgföra, om än lite hopp fram och tillbaka för att få allt att fungera, men jag tycker att jag fått en bra grund från föreläsningen i vad en Trie är och hur man bygger upp root systemet med noder, för Krav 2 tycker jag det kändes enklare då vi jobbat med ER modellering i databas kursen, om än inte samma sak som klassdiagram men strukturen och tänker om varje klass och vad de ska innehålla är likt tycker jag, tycker jag fick med allt som jag valde att ha med i klassdiagramet och att det är lättförståerligt i hur själva programmet kommer att fungera ut ifrån diagrammet. Vidare för krav 3 så tycker jag att testerna var lite krångliga att få till så de kördes men med lite hjälp och pill så lyckades jag få till det, om än så är det en hel del att hålla i huvudet när man ska tänka med rekursivt men testerna gick igenom till slut.</p>
+       <br>
+
+       <p>*Skriv ett allmänt stycke om hur projektet gick att genomföra. Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. Var projektet lätt eller svårt? Tog det lång tid? Vad var svårt och vad gick lätt? Var det ett bra och rimligt projekt för denna kursen?</p>
+
+       <p>-Projektet tog sin tid, har hållt på mycket med databaskursen nu över sommaren likväl webapp projektet så det var en del att sätta sig in i igen i själva pytonic tänket, jag kan tycka att för själva grundkravet så borde det sänkas för att sedan öka med de optionella kraven, för känns som grunden är typ 80% och skulle man vilja lägga till resten så hade det nog inte blivit så mycket extra arbete, men själva projektet i sig tar upp nästan allt vi gått igenom i kursen och är ett rimligt projekt tycker jag.</p>
+       <br>
+
+       <p>*Feedback</p>
+       <p>-Jag tycker kursen har var bra, mycket teori att ta in och det är alltid intressant, Andreas hade bra föreläsningar för hur de olika algorimterna fungerar, kunde kanske ha gått djupare också men det kanske hade varit överflödigt för de uppgifter vi jobbar med i kursen. Kursen får en 7/10 av mig, mest för jag är mer intresserad av webbappar och bygga med javascript.</p>
+
+    </div>
+</div>
+
+{% include "footer.html"%}

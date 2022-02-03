@@ -1,0 +1,26 @@
+{
+    "details": "Generated for miek19 at 2021-03-03 08:02:17.",
+    "key": "cf58294664b0b717c17da29f56dcc25a",
+    "summary": {
+        "questions": 6,
+        "points": 10,
+        "pass": 10,
+        "passdistinct": 10
+    },
+    "points": {
+        "1.1": 2,
+        "1.2": 2,
+        "1.3": 2,
+        "1.4": 2,
+        "1.5": 1,
+        "1.6": 1
+    },
+    "answers": {
+        "1.1": "502075-3392",
+        "1.2": "Name: Farseer SSN: 502075-3392 Address: Buckkeep Smaland Tear",
+        "1.3": "Name: Buster SSN: 228474-2825 Courses: webapp, ramverk2, webapp",
+        "1.4": 3,
+        "1.5": "Name: Steve SSN: 482075-3621 Courses: oopython, oophp",
+        "1.6": "{\n    \"name\": \"Steve\",\n    \"ssn\": \"482075-3621\",\n    \"courses\": [\n        \"oopython\",\n        \"oophp\"\n    ]\n}"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "Accounts": [
+        {
+            "type": "Account",
+            "balance": 6000.0,
+            "holders": []
+        },
+        {
+            "type": "SavingsAccount",
+            "balance": 3500.0,
+            "holders": []
+        },
+        {
+            "type":"Account",
+            "balance": 100000.0,
+            "holders": []
+        },
+        {
+            "type": "SavingsAccount",
+            "balance": 2500,
+            "holders": []
+        }
+    ],
+    "Customers": [
+        {
+            "id": "and",
+            "name": "Andreas"
+        },
+        {
+            "id": "mar",
+            "name": "Martin"
+        }
+    ]
+}

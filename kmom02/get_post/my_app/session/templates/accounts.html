@@ -1,0 +1,20 @@
+{% include "header.html"%}
+
+
+
+<div class="container" role="main">
+    <h1>Accounts</h1>
+    <div class ="row">
+
+        {% for acc in accs %}
+            <div class="col-s-3">
+                <p>Account: {{acc.name}}</p>
+                <p>Balance: {{acc.balance}}</p>
+                <p>Owner: {{acc.owner}}</p>
+                <br>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "footer.html"%}

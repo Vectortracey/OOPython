@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Account",
+        "balance": 4500.0
+    },
+    {
+        "type": "Account",
+        "balance": 7995.0
+    },
+    {
+        "type": "SavingsAccount",
+        "balance": 12000
+    },
+    {
+        "type": "SavingsAccount",
+        "balance": 27500
+    }
+]
